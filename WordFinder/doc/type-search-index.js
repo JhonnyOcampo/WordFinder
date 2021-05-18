@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"model","l":"Dictionary"},{"p":"model","l":"WordFinder"}];updateSearchResults();
