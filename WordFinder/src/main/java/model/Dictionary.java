@@ -7,10 +7,22 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashSet;
 
+/**
+ * It is a mock class that represents an English dictionary
+ * 
+ * @author jocampo
+ *
+ */
 public class Dictionary {
 
+	/**
+	 * A HashSet that contains a collection of English words.
+	 */
 	private HashSet<String> dictionary;
 
+	/**
+	 * Constructs a dictionary 
+	 */
 	public Dictionary() {
 		loadDictionary();
 	}
