@@ -5,15 +5,31 @@ import java.util.Collection;
 import java.util.HashSet;
 
 /**
+ * This class contains the methods to find all English words in a given String
+ * 
  * @author Jhonny Ocampo
  *
  */
 public class WordFinder {
 
+	/**
+	 * Array of characters containing all the vowels of the English language.
+	 */
 	private final char[] VOWELS = { 'a', 'e', 'i', 'o', 'u', 'y' };
+	
+	/**
+	 * HashSet containing all the English words found
+	 */
 	private HashSet<String> wordsFound;
+	
+	/**
+	 * Object that represents an English dictionary
+	 */
 	private Dictionary dictionary;
 
+	/**
+	 * Constructs a WordFinder object
+	 */
 	public WordFinder() {
 		wordsFound = new HashSet<String>();
 		dictionary = new Dictionary();
