@@ -98,14 +98,12 @@ public class WordFinder {
 			if ((mask & maskOfVowels) != 0) {
 				char[] subset = new char[word.length];
 				int k = 0;
-
 				for (int i = 0; i < word.length; i++) {
 					if (((1 << i) & mask) != 0) {
 						subset[k] = word[i];
 						k++;
 					}
 				}
-
 				generatePermutations(Arrays.copyOf(subset, k));
 			}
 		}
