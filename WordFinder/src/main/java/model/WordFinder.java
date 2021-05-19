@@ -53,25 +53,20 @@ public class WordFinder {
 	 */
 	public Collection<String> findAllEnglishWords(String word) {
 		wordsFound.clear();
-
 		if (word == null || word.length() == 0) {
 			return wordsFound;
 		}
-
 		String lowercaseWord = word.toLowerCase();
 		StringBuilder sb = new StringBuilder();
-
 		for (int i = 0; i < lowercaseWord.length(); i++) {
 			if (lowercaseWord.charAt(i) >= 'a' && lowercaseWord.charAt(i) <= 'z') {
 				sb.append(lowercaseWord.charAt(i));
 			}
 		}
 		String filteredWord = sb.toString();
-
 		char[] arrWord = filteredWord.toCharArray();
 		int maskOfVowels = 0;
 		boolean found;
-
 		for (int i = 0; i < arrWord.length; i++) {
 			found = false;
 			for (int j = 0; j < VOWELS.length && !found; j++) {
@@ -81,13 +76,10 @@ public class WordFinder {
 				}
 			}
 		}
-
 		if (maskOfVowels == 0) {
 			return wordsFound;
 		}
-
 		generateCombinations(arrWord, maskOfVowels);
-
 		return wordsFound;
 	}
 
@@ -129,9 +121,7 @@ public class WordFinder {
 	private void generatePermutations(char[] word) {
 		int n = word.length;
 		int[] c = new int[n];
-
 		processWord(new String(word));
-
 		int i = 1;
 		while (i < n) {
 			if (c[i] < i) {
@@ -140,9 +130,7 @@ public class WordFinder {
 				} else {
 					swap(word, c[i], i);
 				}
-
 				processWord(new String(word));
-
 				c[i]++;
 				i = 1;
 			} else {
