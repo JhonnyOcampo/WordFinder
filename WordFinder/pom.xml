@@ -6,9 +6,10 @@
 	<artifactId>WordFinder</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>WordFinder</name>
-
 	<properties>
 		<junit.jupiter.version>5.7.2</junit.jupiter.version>
+		<maven.compiler.source>15</maven.compiler.source>
+		<maven.compiler.target>15</maven.compiler.target>
 	</properties>
 
 	<dependencies>
