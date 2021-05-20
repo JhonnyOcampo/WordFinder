@@ -37,7 +37,6 @@ public class Dictionary {
 		if (word == null || dictionary == null) {
 			return false;
 		}
-
 		return dictionary.contains(word);
 	}
 
@@ -50,14 +49,11 @@ public class Dictionary {
 		try {
 			dictionary = new HashSet<String>();
 			File file = new File("english_words.txt");
-
 			BufferedReader br = new BufferedReader(new FileReader(file));
-
 			String st;
 			while ((st = br.readLine()) != null) {
 				dictionary.add(st);
 			}
-
 			br.close();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
