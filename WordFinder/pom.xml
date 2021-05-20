@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.endava</groupId>
 	<artifactId>WordFinder</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>WordFinder</name>
 	<properties>
 		<junit.jupiter.version>5.7.2</junit.jupiter.version>
