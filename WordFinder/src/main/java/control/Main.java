@@ -10,11 +10,9 @@ public class Main {
 		System.out.println("Type a string to find all the English words it contains:");
 		Scanner sc = new Scanner(System.in);
 		String word = sc.nextLine();
-		sc.close();
-		
+		sc.close();		
 		WordFinder wordFinder = new WordFinder();
 		Collection<String> words = wordFinder.findAllEnglishWords(word);
-
 		for (String englishWord : words) {
 			System.out.println(englishWord);
 		}
